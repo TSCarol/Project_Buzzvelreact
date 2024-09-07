@@ -35,6 +35,16 @@ export const Container = styled.div`
     width: 100%;
     height: 100vh;
     padding: 40px;
+    @media (${breakpoints.tablet}) {
+    height: 60vh;
+    padding: 20px;
+    
+    background: radial-gradient(
+    circle at top right,
+    ${colors.purple} 2%,
+    ${colors.dark} 35%
+  );
+  }
   }
 
   @media (${breakpoints.tablet}) {

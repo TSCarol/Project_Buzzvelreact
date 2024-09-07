@@ -22,7 +22,8 @@ export const Container = styled.div`
     to left,
     ${colors.purple} 5%,
     ${colors.dark} 85%
-  );
+    );
+  }
 
   @media (${breakpoints.tablet}) {
     flex-direction: row;
@@ -30,8 +31,8 @@ export const Container = styled.div`
     padding: 1px 0;
     background: radial-gradient(
     circle at top right,
-    ${colors.purple} 5%,
-    ${colors.dark} 54%
+    ${colors.purple} 15%,
+    ${colors.dark} 61%
     );
   }
 `;

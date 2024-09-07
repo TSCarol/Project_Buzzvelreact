@@ -59,10 +59,6 @@ export const Container = styled.div`
     ${colors.purple} 5%,
     ${colors.dark} 39%
     );
-
-    &:hover ${Title} {
-      opacity: 1;
-    }
   }
 
   @media (${breakpoints.tablet}) {
@@ -70,10 +66,11 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 60hv;
-
-    &:hover ${Title} {
-      opacity: 1;
-    }
+    background: radial-gradient(
+    circle at bottom right,
+    ${colors.purple} 5%,
+    ${colors.dark} 37%
+    );
   }
 `;
 
