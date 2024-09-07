@@ -121,7 +121,7 @@ const Section = () => {
   };
 
   return (
-    <Container id='aboutMe'>
+    <Container id="aboutMe">
       <CardContainer
         ref={cardContainerRef}
         className={isVisible ? 'visible' : ''}

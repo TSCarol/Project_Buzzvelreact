@@ -13,17 +13,17 @@ const fadeIn = keyframes`
 `;
 
 export const BuzzContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150vh;
-    width: 100%;
-    background: radial-gradient(
-        circle at top left,
-        ${colors.pink} 4%,
-        ${colors.dark} 35%
-    );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  width: 100%;
+  background: radial-gradient(
+    circle at top left,
+    ${colors.pink} 4%,
+    ${colors.dark} 35%
+  );
 
   @media (${breakpoints.celular}) {
     height: auto;
@@ -37,45 +37,45 @@ export const BuzzContainer = styled.div`
 `;
 
 export const TextCard = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 1000px;
-    height: 400px;
-    background-color: ${colors.white};
-    color: ${colors.blue};
-    border-radius: 10px;
-    transition: opacity 0.5s ease-in-out;
-    animation: ${fadeIn} 2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1000px;
+  height: 400px;
+  background-color: ${colors.white};
+  color: ${colors.blue};
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+  animation: ${fadeIn} 2s ease-in-out;
 
-    h1 {
-        font-size: 30px;
-        margin-bottom: 30px;
-        text-align: center;
-        margin-top: 70px;
-        color: ${colors.white};
-        background-color: ${colors.pink};
-        border-radius: 5px;
-        animation: ${fadeIn} 2.5s ease-in-out;
-    }
+  h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 70px;
+    color: ${colors.white};
+    background-color: ${colors.pink};
+    border-radius: 5px;
+    animation: ${fadeIn} 2.5s ease-in-out;
+  }
 
-    p {
-        font-size: 20px;
-        margin: 0 70px;
-        text-align: justify;
-        color: ${colors.dark};
-        opacity: 0.5;
-        animation: ${fadeIn} 3s ease-in-out;
-    }
+  p {
+    font-size: 20px;
+    margin: 0 70px;
+    text-align: justify;
+    color: ${colors.dark};
+    opacity: 0.5;
+    animation: ${fadeIn} 3s ease-in-out;
+  }
 
-     &.fade-in p {
-        opacity: 1; 
-    }
+  &.fade-in p {
+    opacity: 1;
+  }
 
-    &.fade-out {
-        opacity: 0.3; 
-    }
+  &.fade-out {
+    opacity: 0.3;
+  }
 
   @media (${breakpoints.celular}) {
     width: 90%;
@@ -102,21 +102,20 @@ export const TextCard = styled.div`
       font-size: 18px;
     }
   }
-
-`
+`;
 
 export const ProjectCard = styled.div<{ isSelected: boolean }>`
-    display: flex;
-    flex-direction: column;
-    background-color: ${colors.white};
-    color: ${colors.dark};
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    width: ${(props) => (props.isSelected ? "350px" : "320px")};
-    height: ${(props) => (props.isSelected ? "550px" : "510px")};
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease; 
+  display: flex;
+  flex-direction: column;
+  background-color: ${colors.white};
+  color: ${colors.dark};
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: ${(props) => (props.isSelected ? '350px' : '320px')};
+  height: ${(props) => (props.isSelected ? '550px' : '510px')};
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 
   @media (${breakpoints.celular}) {
     width: 90%;
@@ -126,9 +125,9 @@ export const ProjectCard = styled.div<{ isSelected: boolean }>`
   }
 
   @media (${breakpoints.tablet}) {
-    flex: 0 0 calc(50% - 20px); 
-    width: ${(props) => (props.isSelected ? "350px" : "320px")};
-    height: ${(props) => (props.isSelected ? "650px" : "550px")};
+    flex: 0 0 calc(50% - 20px);
+    width: ${(props) => (props.isSelected ? '350px' : '320px')};
+    height: ${(props) => (props.isSelected ? '650px' : '550px')};
   }
 `;
 
@@ -137,7 +136,7 @@ export const CardImage = styled.img`
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 `;
 
 export const CardTitle = styled.h2`
@@ -178,10 +177,10 @@ export const ProjectsContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   overflow: hidden;
-  
+
   @media (${breakpoints.celular}) {
     max-width: 100%;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     width: 80%;
@@ -192,14 +191,14 @@ export const ProjectsContainer = styled.div`
     width: 80%;
     height: auto;
     overflow-x: hidden;
-    scroll-snap-type: x mandatory; 
+    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
   }
 `;
 
 export const Title = styled.h1`
   font-size: 30px;
-  color: ${colors.pink}; 
+  color: ${colors.pink};
   margin-top: 90px;
   margin-bottom: 35px;
   width: 1000px;

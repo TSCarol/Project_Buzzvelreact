@@ -112,16 +112,20 @@ export const CardHab = styled.div<CardHabProps>`
       width: 45px;
       height: 45px;
       opacity: 0;
-      animation: ${({ visible }) => (visible ? fadeIn : 'none')} 0.5s ease forwards;
-      animation-delay: ${({ index, row }) => `${row * 0.5 + (index % 5) * 0.2}s`};
+      animation: ${({ visible }) => (visible ? fadeIn : 'none')} 0.5s ease
+        forwards;
+      animation-delay: ${({ index, row }) =>
+        `${row * 0.5 + (index % 5) * 0.2}s`};
     }
 
     @media (${breakpoints.tablet}) {
       width: 60px;
       height: 60x;
       opacity: 0;
-      animation: ${({ visible }) => (visible ? fadeIn : 'none')} 0.5s ease forwards;
-      animation-delay: ${({ index, row }) => `${row * 0.5 + (index % 5) * 0.2}s`};
+      animation: ${({ visible }) => (visible ? fadeIn : 'none')} 0.5s ease
+        forwards;
+      animation-delay: ${({ index, row }) =>
+        `${row * 0.5 + (index % 5) * 0.2}s`};
     }
   }
 

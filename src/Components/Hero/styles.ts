@@ -54,20 +54,23 @@ export const Container = styled.div`
     height: auto;
     justify-content: center;
     height: 90vh;
+    background: radial-gradient(
+    circle at bottom right,
+    ${colors.purple} 5%,
+    ${colors.dark} 39%
+    );
 
-    
     &:hover ${Title} {
       opacity: 1;
     }
   }
 
   @media (${breakpoints.tablet}) {
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 60hv;
 
-    
     &:hover ${Title} {
       opacity: 1;
     }
@@ -80,7 +83,7 @@ export const Image = styled.div`
   justify-content: center;
   align-items: center;
   margin-left: 110px;
-  
+
   .img-wrapper {
     padding: 10px;
     border: 5px solid ${colors.purple};
@@ -107,7 +110,7 @@ export const Image = styled.div`
     }
   }
 
-  @media (${breakpoints.tablet}) { 
+  @media (${breakpoints.tablet}) {
     margin-left: 30px;
     img {
       height: 350px;
@@ -177,10 +180,10 @@ export const StyledImage2 = styled.img`
 export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   width: 800px;
-  padding-right: 110px; 
+  padding-right: 110px;
 
   @media (${breakpoints.celular}) {
     width: 100%;

@@ -51,7 +51,7 @@ export const Title = styled.div`
   height: 100%;
 
   @media (${breakpoints.celular}) {
-    text-align: center; 
+    text-align: center;
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -59,7 +59,7 @@ export const Title = styled.div`
   }
 
   @media (${breakpoints.tablet}) {
-    text-align: center; 
+    text-align: center;
     align-items: center;
     padding-top: 20px;
   }
@@ -106,7 +106,7 @@ export const TitleText = styled.div`
     }
 
     @media (${breakpoints.tablet}) {
-      text-align: center; 
+      text-align: center;
       align-items: center;
       padding-top: 10px;
       font-size: 23px;
@@ -121,7 +121,7 @@ export const TitleText = styled.div`
     border-radius: 20px;
     padding: 10px;
     max-width: 600px;
-    animation: ${fadeIn} 3.5s ease-in-out; 
+    animation: ${fadeIn} 3.5s ease-in-out;
 
     @media (${breakpoints.celular}) {
       font-size: 16px;
@@ -137,10 +137,10 @@ export const TitleText = styled.div`
   }
 
   @media (${breakpoints.celular}) {
-      text-align: center;
-      align-items: center;
-      margin-left: 0;
-    }
+    text-align: center;
+    align-items: center;
+    margin-left: 0;
+  }
 `;
 
 export const VideoContainer = styled.div`
@@ -148,14 +148,14 @@ export const VideoContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end; 
+  align-items: flex-end;
   width: 100%;
   height: 100%;
   overflow: hidden;
   max-width: 100%;
   position: relative;
 
-   @media (${breakpoints.celular}) {
+  @media (${breakpoints.celular}) {
     align-items: center;
   }
 
@@ -164,7 +164,7 @@ export const VideoContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end; 
+    align-items: flex-end;
     width: 100%;
     height: 80vh;
     overflow: hidden;

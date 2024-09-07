@@ -40,6 +40,12 @@ export const Container = styled.div`
   @media (${breakpoints.tablet}) {
     height: 60vh;
     padding: 20px;
+
+    background: radial-gradient(
+    circle at top right,
+    ${colors.purple} 2%,
+    ${colors.dark} 45%
+  );
   }
 `;
 
@@ -204,7 +210,7 @@ export const MiniCard = styled.div<{
         width: 240px;
         height: 400px;
       `}
-    
+
     ${({ cardType }) =>
       cardType === 'academica' &&
       css`

@@ -24,7 +24,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster }) => {
     };
 
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.5,  
+      threshold: 0.5,
     });
 
     observer.observe(videoElement);
@@ -42,7 +42,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster }) => {
         controls
         poster={poster}
         style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
-        loop  
+        loop
       >
         <source src={src} type="video/mp4" />
         Seu navegador não suporta a tag de vídeo.

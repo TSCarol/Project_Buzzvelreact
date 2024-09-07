@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Link } from './styles';
 
 const NaveSection = () => {

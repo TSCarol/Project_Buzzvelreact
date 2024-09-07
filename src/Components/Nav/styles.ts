@@ -18,17 +18,21 @@ export const Container = styled.div`
     flex-direction: column;
     height: auto;
     padding: 20px 0;
-    background: radial-gradient(
-    circle at top right,
+    background: linear-gradient(
+    to left,
     ${colors.purple} 5%,
-    ${colors.dark} 68%
+    ${colors.dark} 85%
   );
 
-   @media (${breakpoints.tablet}) {
+  @media (${breakpoints.tablet}) {
     flex-direction: row;
     height: 12vh;
     padding: 1px 0;
-  );
+    background: radial-gradient(
+    circle at top right,
+    ${colors.purple} 5%,
+    ${colors.dark} 54%
+    );
   }
 `;
 
