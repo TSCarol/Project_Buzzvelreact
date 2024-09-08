@@ -156,7 +156,7 @@ export const VideoContainer = styled.div`
   position: relative;
 
   @media (${breakpoints.celular}) {
-    align-items: center;
+    display: none; 
   }
 
   @media (${breakpoints.tablet}) {

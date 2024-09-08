@@ -38,7 +38,7 @@ export const Container = styled.div`
 `;
 
 export const Link = styled.a`
-  color: ${colors.pink};
+  color: ${colors.white};
   text-decoration: none;
   margin: 0 25px;
   font-size: 25px;
@@ -49,7 +49,7 @@ export const Link = styled.a`
 
   &:hover {
     transform: scale(1.1);
-    color: ${colors.yellow};
+    color: ${colors.pink};
   }
 
   @media (${breakpoints.celular}) {
@@ -61,7 +61,7 @@ export const Link = styled.a`
 
     &:hover {
       transform: scale(1.1);
-      color: ${colors.yellow};
+      color: ${colors.pink};
     }
   }
 
